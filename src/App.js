@@ -190,14 +190,14 @@ function App() {
       id: 1,
       name: 'Grupo Tramontina',
       cidade: 'Carlos Barbosa - RS',
-      text: 'A Sul Estruturas entregou nosso galpão industrial antes do prazo. Profissionalismo e qualidade impecáveis!',
+      text: 'A Sul Estruturas entregou um serviço de qualidade antes do prazo. Profissionalismo e qualidade impecáveis!',
       rating: 5
     },
     {
       id: 2,
       name: 'Random Implementos Rodoviários',
       cidade: 'Caxias do Sul - RS',
-      text: 'Excelente empresa! Fizeram o pavilhão comercial da nossa empresa com muita competência. Recomendamos a todos!',
+      text: 'Excelente empresa! Fizeram um belo trabalho aqui na nossa empresa com muita competência. Recomendamos a todos!',
       rating: 5
     },
     {
