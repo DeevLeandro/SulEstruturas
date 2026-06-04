@@ -747,6 +747,24 @@ html {
   font-size: 1.05rem;
 }
 
+.testimonial-author {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.testimonial-author strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.testimonial-cidade {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
 /* Contato */
 .contato {
   background-color: var(--cinza-claro);

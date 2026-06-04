@@ -14,7 +14,6 @@ function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Slides do carrossel - Sul Estruturas
   const heroSlides = [
     {
       id: 1,
@@ -147,7 +146,6 @@ function App() {
     handleNavClick();
   };
 
-  // Serviços - Galpões, Pavilhões e Estruturas
   const services = [
     {
       id: 1,
@@ -190,20 +188,23 @@ function App() {
   const testimonials = [
     {
       id: 1,
-      name: 'João Carlos Silva',
+      name: 'Grupo Tramontina',
+      cidade: 'Carlos Barbosa - RS',
       text: 'A Sul Estruturas entregou nosso galpão industrial antes do prazo. Profissionalismo e qualidade impecáveis!',
       rating: 5
     },
     {
       id: 2,
-      name: 'Maria Helena Santos',
-      text: 'Excelente empresa! Fizeram o pavilhão comercial da minha empresa com muita competência. Recomendo a todos!',
+      name: 'Random Implementos Rodoviários',
+      cidade: 'Caxias do Sul - RS',
+      text: 'Excelente empresa! Fizeram o pavilhão comercial da nossa empresa com muita competência. Recomendamos a todos!',
       rating: 5
     },
     {
       id: 3,
-      name: 'Roberto Almeida',
-      text: 'Contratei a Sul Estruturas para um mezanino e fiquei impressionado com a qualidade do serviço e atendimento.',
+      name: 'Foca Móbile',
+      cidade: 'Caxias do Sul - RS',
+      text: 'Contratamos a Sul Estruturas e ficamos impressionados com a qualidade do serviço e atendimento.',
       rating: 5
     }
   ];
@@ -243,7 +244,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* Botão flutuante WhatsApp */}
       <div className="floating-whatsapp">
         <button onClick={openWhatsAppFlutuante} aria-label="WhatsApp">
           <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
@@ -252,7 +252,6 @@ function App() {
         </button>
       </div>
       
-      {/* Header */}
       <header className="header">
         <div className="container">
           <div className="logo-container">
@@ -285,7 +284,6 @@ function App() {
         </div>
       </header>
 
-      {/* Hero Section - Carrossel */}
       <section className="hero-carousel">
         <div className="carousel-container">
           {heroSlides.map((slide, index) => (
@@ -335,7 +333,6 @@ function App() {
         </div>
       </section>
 
-      {/* Serviços */}
       <section id="servicos" className="section servicos">
         <div className="container">
           <h2 className="section-title">Nossos Serviços</h2>
@@ -364,7 +361,6 @@ function App() {
         </div>
       </section>
 
-     {/* Sobre Nós - Versão Compacta */}
       <section id="sobre" className="section sobre">
         <div className="container">
           <h2 className="section-title">Sobre a Sul Estruturas</h2>
@@ -410,7 +406,6 @@ function App() {
         </div>
       </section>
 
-      {/* Por que nos escolher */}
       <section className="section why-choose-us">
         <div className="container">
           <h2 className="section-title">Por que escolher a Sul Estruturas?</h2>
@@ -429,7 +424,6 @@ function App() {
         </div>
       </section>
 
-      {/* Avaliações */}
       <section id="avaliacoes" className="section testimonials">
         <div className="container">
           <h2 className="section-title">O que nossos clientes dizem</h2>
@@ -444,6 +438,7 @@ function App() {
                 <p className="testimonial-text">"{testimonial.text}"</p>
                 <div className="testimonial-author">
                   <strong>{testimonial.name}</strong>
+                  <span className="testimonial-cidade">{testimonial.cidade}</span>
                 </div>
               </div>
             ))}
@@ -451,7 +446,6 @@ function App() {
         </div>
       </section>
 
-      {/* Contato */}
       <section id="contato" className="section contato">
         <div className="container">
           <h2 className="section-title">Solicite seu orçamento gratuito</h2>
@@ -572,7 +566,6 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="footer">
         <div className="container">
           <div className="footer-content">
